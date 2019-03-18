@@ -1,2 +1,6 @@
 <h1><%= @post.title %></h1>
 <p><%= @post.description %></p>
+<form method=“POST” action=“/posts/<%=@post.id>"/>
+ <input type=“hidden” name=“_method” value=“PATCH” />
+<input type=“submit” id=“Change activation” value=“Change activation”/>
+</form>
