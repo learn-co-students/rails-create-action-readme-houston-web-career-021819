@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  #resources :posts, :index
+  #resources :posts, :new
+  #resources :posts, :show
+  resources :posts
+  post '/posts/new', to:'posts#create', as: 'create_post'
 end
+ 
